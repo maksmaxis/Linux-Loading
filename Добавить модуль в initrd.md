@@ -70,7 +70,7 @@ Output:
 *** Creating image file done ***
 *** Creating initramfs image file '/boot/initramfs-3.10.0-1160.el7.x86_64.img' done ***
 ```
-
+Отредактировать grub.cfg убрав опции rghb и quiet: 
 ```
-sed -i '/rhgb quiet/d' /boot/grub2/grub.cfg
+sed -i 's/rhgb quiet//g' /boot/grub2/grub.cfg
 ```
